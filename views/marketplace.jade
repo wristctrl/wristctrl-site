@@ -15,13 +15,13 @@ block content
 	.nav-offset
 	.container(ng-controller='MarketplaceCtrl')
 		.row
-			.col-sm-4(ng-repeat='app in apps')
+			.col-sm-4(ng-repeat='plugin in plugins')
 				.package
-					img.thumb(src="{{ app.img }}")
-					h3.t-dark {{ app.$id }}
+					img.thumb(src="{{ plugin.img }}")
+					h3.t-dark {{ plugin.$id }}
 					p.t-medium 1/17/2014
 					.buttons
-						button.loose.button.button-medium-inverse.width100(ng-click="addApp(app)") add
+						button.loose.button.button-medium-inverse.width100(ng-click="addPlugin(plugin)") add
 	.custom-footer-placeholder
 	.custom-footer
 		h1.t-dark WRIST#[span.t-accent •]&lt;CTRL&gt;
